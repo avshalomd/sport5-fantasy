@@ -6,7 +6,9 @@ Data driven, fantasy football, lineups generator
 
 ## Download and install python3, anaconda and git
 [python3](https://www.python.org/downloads/)
+
 [anaconda](https://docs.anaconda.com/anaconda/install/)
+
 [git](https://git-scm.com/downloads)
   
 ## Clone this repo
@@ -16,7 +18,7 @@ Data driven, fantasy football, lineups generator
 `conda create --name <env> --file requirements.txt`
 
 
-# Exectute
+# Execute
 
 ## Run jupyter and execute notebook
 `jupyter notebook fantasy-euro`

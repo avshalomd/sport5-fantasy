@@ -21,4 +21,4 @@ Data driven, fantasy football, lineups generator
 # Execute
 
 ## Run jupyter and execute notebook
-`jupyter notebook fantasy-euro`
+`jupyter notebook fantasy-euro.ipynb`

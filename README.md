@@ -15,7 +15,9 @@ Data driven, fantasy football, lineups generator
 `git clone https://github.com/avshalomd/sport5-fantasy.git`
 
 ## Create env and install requirements
-`conda create --name <env> --file requirements.txt`
+`cd sport5-fantasy`
+`conda create --name fantasy --file requirements.txt`
+`conda activate fantasy`
 
 
 # Execute

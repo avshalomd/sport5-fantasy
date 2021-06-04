@@ -1,0 +1,41 @@
+﻿
+$(document).ready(function () {
+    
+    if (!window.gaModules || !window.gaModules["team/ga-team-common"]) return;
+
+    //Click on DateToggle and Date
+    //$("#breadcrumb-nav").on('click', '[name]', function () {
+    //    NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickBreadcrumbNav, 'TeamHeader');
+    //});
+    
+    $("#teams").on('click', 'options', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickBreadcrumbNav, 'TeamHeader');
+    });
+
+    //Click at the team Header
+    $('#breadcrumb-nav a[href*="/Regions/"]').on('click', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickTournament, 'TeamHeader');
+    });
+
+    $('#sub-navigation a[href^="/Teams/"][href*="Show"]').on('click', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickMenuBar, 'Link_Summary');
+    });
+
+    //Click at Menubar
+    $('#sub-navigation a[href*="/Fixtures/"]').on('click', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickMenuBar, 'Link_Fixtures');
+    });
+
+    $('#sub-navigation a[href*="/Statistics/"]').on('click', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickMenuBar, 'Link_Statistics');
+    });
+
+    $('#sub-navigation a[href*="/News/"]').on('click', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickMenuBar, 'Link_News');
+    });
+
+    $('#sub-navigation a[href*="/Archive/"]').on('click', function () {
+        NGGA.trackEvent(NGGA.Categories.Team, NGGA.Actions.ClickMenuBar, 'Link_History');
+    });
+
+});

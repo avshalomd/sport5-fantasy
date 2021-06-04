@@ -1,0 +1,286 @@
+var dv = {};
+function fnalert() {pageEventHandler();createdom();}
+function createdom() {
+    $setStyle("#main-container", {display: "block",borderColor: dv.bordercolor});
+    $ge("#logoimg")[0].src = dv.logoimg;
+    //$ge("#copytxtparent1")[0].innerHTML=dv.copytxt1;
+    //$ge("#copytxtparent2")[0].innerHTML=dv.copytxt2;
+    $setStyle("#feature", {backgroundColor: dv.bgcolor1});
+    $setStyle("#copycontainer", {backgroundColor: dv.bgcolor2});
+    $setStyle(".productc", {backgroundColor: dv.cardcolor});
+    $setStyle(".productoverlay", {backgroundColor: dv.overlaycolor});
+    $setStyle("#copytxtparent1", {color: dv.copytxtcolor1});
+	$setStyle("#copytxtparent2", {color: dv.copytxtcolor2});
+    $setStyle(".ctaparent", {backgroundColor: dv.ctabgcolor,color: dv.ctatxtcolor}); //cta 
+    //$setStyle(".ctatxt", {color: dv.ctatxtcolor});
+    $setStyle(".scrollparent", {backgroundColor: dv.cardcolor});
+    $setStyle(".scrollthumb", {backgroundColor: dv.scrollcolor});
+    $setStyle(".pricetxt", {color: dv.pricecolor});
+
+
+    var ele = [];
+    //ele.push(["copyparent1", "copytxtparent1"]);
+    //ele.push(["copyparent2", "copytxtparent2"]);
+
+    for(var i=0; i<dv.pimg.length; i++){
+    $ge("#img"+(i+1))[0].src = dv.pimg[i];
+    $ge("#copytxtparent1p"+(i+1))[0].innerHTML=dv.copytxt1;
+    $ge("#copytxtparent2p"+(i+1))[0].innerHTML=dv.copytxt2;
+	
+	// event  start add
+    // var pe=$ge("#productc"+(i+1));    
+    // pe[0].addEventListener("mouseenter", ctamouseenter,false); // ctaHover
+    // pe[0].addEventListener("mouseleave", ctamouseleave,false); // ctaHover
+    // event end
+    
+    dv.ctatxt='<svg id="#ctasvg'+(i+1)+'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 118" width="183" height="118"> <path id="#ctapath'+(i+1)+'" fill="currentcolor" class="shp0" d="M11 46C11 46 134.25 47.22 134 47C133.75 46.78 108 19 108 19C108 19 104 -0.28 125 2L177 53C177 53 181.5 59.22 177 65L126 115C126 115 108.75 121.47 108 101L133 72L9 72C9 72 -7.5 57.22 11 46Z"/> </svg>';
+  
+    $ge("#ctatxt"+(i+1))[0].innerHTML=dv.ctatxt;
+	
+	if(dv.pricehide=="OFF"){ $ge("#pricetxt"+(i+1))[0].innerHTML=copytrim(dv.pname[i]); } 
+	else{ $ge("#pricetxt"+(i+1))[0].innerHTML=copytrim(dv.pname[i]) +" <br> "+dv.currency+dv.pprice[i].split('.00')[0]; }
+	
+    ele.push(["copyparent1p"+(i+1), "copytxtparent1p"+(i+1)]);
+    ele.push(["copyparent2p"+(i+1), "copytxtparent2p"+(i+1)]);
+    ele.push(["priceparent"+(i+1), "pricetxt"+(i+1)]);
+
+    }
+   
+    frs(ele);
+
+    if(dv.designversion=="OFF"){
+         $setStyle(".productoverlay ", {opacity: 0});
+    }//else{ $setStyle("#copycontainer", {width: "66px"});}
+}
+
+//start cta events
+function setCTAHover(){  var k=$ge('.productc');for(var i=0;i<k.length;i++){ k[i].addEventListener("mouseenter", ctamouseenter,false); k[i].addEventListener("mouseleave", ctamouseleave,false); }}
+function ctamouseenter(e){ var a=e.target.children[1].children[1];  $setStyle(a, {backgroundColor: dv.CTA_BG_Hover_Hex,color: dv.CTA_Arrow_Hover_Hex}); }
+function ctamouseleave(e){ var a=e.target.children[1].children[1];  $setStyle(a, {backgroundColor: dv.ctabgcolor,color: dv.ctatxtcolor}); }
+//end
+
+function copytrim(t){if(t.length>11){return t.substr(0,11)+"...";} else{return t;}}
+
+function duplicteproduct(){var kk=$ge("#productc1")[0];kk = kk.cloneNode(true);kk.children[0].children[0].removeAttribute("onload");$ge("#productcontainer")[0].appendChild(kk);}
+
+
+var adder = 0;
+function loadafter() { adder++; if (adder == ($ge("img[onload]").length+1) ) {  duplicteproduct();  setCTAHover(); checkAdVisible();}}
+function adVisible(){animationstart();}
+var loopCount = 0;
+function animationstart() {    
+$t("#main-container", {}, {opacity: 1}, "ease-in", 0.5, 0,{start:productanimation}); 
+$t("#scrollthumb", {}, {left:  "0%"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5,0);
+$t("#productcontainer", {}, {transform: "translate(0%)"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5, 0);
+}
+var pCount=2; var inc=0; var de=1; var prT=16.66; //10->5 & 10->20
+function productanimation(){ inc++; //console.log(inc, de);
+if(inc<=pCount  && autoscroll){    $t("#productcontainer", {}, {transform: "translate(-"+ ( inc * prT  ) +"%)"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5, de,{end:productanimation});
+ $t("#scrollthumb", {}, {left:  ( inc * prT ) +"%"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5,de);
+  }
+}
+
+
+
+function init() {
+	
+	// setadd+=1;
+    // if(setadd==1){
+	Enabler.setProfileId(10519470);
+    var devDynamicContent = {};
+
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang = [{}];
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0]._id = 0;
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Short_Name = "Boys Next Blue Tiger Dungarees and Bodysuit Set (0mths-2yrs) -  Blue";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Exit = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Exit.Url = "https://www.next.co.il/en/style/st539832/100114#100114";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Image_URL = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Image_URL.Url = "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemShot/315x472/100114.jpg";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Merchant_Category_Level_1 = "Fashion";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Merchant_Category_Level_2 = "Newborn Boys";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Merchant_Category_Level_3 = "Dungarees";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Brand = "Next";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Price = "79.00";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Currency = "ILS";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Division_Group = "Newborn";
+	
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch = [{},{},{},{}];
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0]._id = 0;
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Short_Name = "Boys Next Blue Tiger Dungarees and Bodysuit Set (0mths-2yrs) -  Blue";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Exit = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Exit.Url = "https://www.next.co.il/en/style/st539832/100114#100114";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Image_URL = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Image_URL.Url = "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemShot/315x472/100114.jpg";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Price = "79.00";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Currency = "ILS";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Short_Name = "Mens Under Armour Sports Style Logo Tank -  Grey";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Exit = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Exit.Url = "https://www.next.co.il/en/style/st513923/100154#100154";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Image_URL = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Image_URL.Url = "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemShot/315x472/100154.jpg";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Price = "99.00";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Currency = "ILS";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Short_Name = "Mens Next Toffee Slim Fit Stretch Chinos -  Orange";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Exit = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Exit.Url = "https://www.next.co.il/en/g61228s7/100177#100177";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Image_URL = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Image_URL.Url = "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemShot/315x472/100177.jpg";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Price = "76.00";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Currency = "ILS";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Short_Name = "Girls Next Bright Spot Leggings (3mths-7yrs) -  Cream";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Exit = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Exit.Url = "https://www.next.co.il/en/style/st446414/100182#100182";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Image_URL = {};
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Image_URL.Url = "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemShot/315x472/100182.jpg";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Price = "22.00";
+    devDynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Currency = "ILS";
+	
+	devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG = [{}];
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0]._id = 0;
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Overlay_Active = "OFF";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Copy_Active = "ON";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Price_Active = "OFF";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Currency = "\u20AA";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Header_Copy = "Don\'t forget about us.";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Sub_Copy = "You left your basket full, want to carry on shopping?";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Exit_URL = {};
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Exit_URL.Url = "https://www.next.co.il/en";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Copy_Hex = "#FFFFFF";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Product_Copy_Hex = "#222222";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Price_Copy_Hex = "#222222";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_Arrow_Hex = "#FFFFFF";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_Arrow_Hover_Hex = "#000000";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_BG_Hex = "#000000";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_BG_Hover_Hex = "#00F1A1";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Background_Hex = "#FFFFFF";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Border_Hex = "#222222";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Tray_Hex = "#000000";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Card_Hex = "#F3F4F6";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Scrollbar_Hex = "#222222";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Logo_DRM = {};
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Logo_DRM.Type = "file";
+    devDynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Logo_DRM.Url = "https://s0.2mdn.net/ads/richmedia/studio/43077739/43077739_20200110084848617_Blank_Image.png";
+    
+	Enabler.setDevDynamicContent(devDynamicContent);
+	 
+    dv.designversion = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Overlay_Active;
+    dv.bordercolor=dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Border_Hex;
+    dv.pricecolor=dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Price_Copy_Hex;
+	dv.scrollcolor=dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Scrollbar_Hex;
+    dv.logoimg = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Logo_DRM.Url;
+    dv.bgcolor1=dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Background_Hex;
+    dv.bgcolor2=dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Tray_Hex;
+    dv.copytxt1 = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Header_Copy;
+    dv.copytxt2 = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Sub_Copy;
+    dv.copytxtcolor1 = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Copy_Hex;
+	dv.copytxtcolor2 = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Copy_Hex;
+    dv.ctatxt='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 118" width="183" height="118"> <path fill="currentcolor" class="shp0" d="M11 46C11 46 134.25 47.22 134 47C133.75 46.78 108 19 108 19C108 19 104 -0.28 125 2L177 53C177 53 181.5 59.22 177 65L126 115C126 115 108.75 121.47 108 101L133 72L9 72C9 72 -7.5 57.22 11 46Z"/> </svg>';
+    dv.ctabgcolor=dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_BG_Hex;
+    dv.ctatxtcolor = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_Arrow_Hex;
+    // dv.ctaovercolor =dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_BG_Hover_Hex;
+    dv.cardcolor = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Card_Hex;
+    // dv.overlaycolor = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Overlay_Hex;
+    dv.isCopyBox= dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Copy_Active;
+    dv.exiturl = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Exit_URL.Url;
+	dv.pricehide = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Price_Active;
+	dv.currency = dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].Currency;
+	dv.CTA_Arrow_Hover_Hex =dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_Arrow_Hover_Hex; 
+	dv.CTA_BG_Hover_Hex =dynamicContent.Next_Retargeting_MASTER_FEB_2020_ISR_ENG[0].CTA_BG_Hover_Hex;
+
+    dv.pimg=[];
+    dv.pimg.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Image_URL.Url);
+    dv.pimg.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Image_URL.Url);
+    dv.pimg.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Image_URL.Url);
+    dv.pimg.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Image_URL.Url);
+    dv.pimg.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Image_URL.Url);
+	
+    dv.pname=[];
+    dv.pname.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Short_Name);
+    dv.pname.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Short_Name);
+    dv.pname.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Short_Name);
+    dv.pname.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Short_Name);
+    dv.pname.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Short_Name);
+	
+    dv.pprice=[];
+    dv.pprice.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Price);
+    dv.pprice.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Price);
+    dv.pprice.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Price);
+    dv.pprice.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Price);
+    dv.pprice.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Price);
+	
+    dv.pexiturl=[];
+    dv.pexiturl.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang[0].Exit.Url);
+    dv.pexiturl.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[0].Exit.Url);
+    dv.pexiturl.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[1].Exit.Url);
+    dv.pexiturl.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[2].Exit.Url);
+    dv.pexiturl.push(dynamicContent.Next_IL_Next_Display_Custom_INTL_Eng_Lang_ProductMatch[3].Exit.Url);
+	
+	
+    fnalert();
+}
+
+function productExit(p){
+	switch(p){
+		case 1:  Enabler.exitOverride("Product Click 1", dv.pexiturl[0]); Enabler.counter("Product1");  break;
+		case 2:  Enabler.exitOverride("Product Click 2", dv.pexiturl[1]); Enabler.counter("Product2");  break;
+		case 3:  Enabler.exitOverride("Product Click 3", dv.pexiturl[2]); Enabler.counter("Product3");  break;
+		case 4:  Enabler.exitOverride("Product Click 4", dv.pexiturl[3]); Enabler.counter("Product4"); break;
+		case 5:  Enabler.exitOverride("Product Click 5", dv.pexiturl[4]); Enabler.counter("Product5"); break;
+		
+		default :  Enabler.exitOverride("feature", dv.exiturl);	Enabler.counter("main");	break;	
+	}
+}
+
+
+function exitClickHandler(e) {
+if($ge("#productcontainer")[0].contains(e.target)){
+	var l=e.target.id.length;  console.log(e.target.id.substr(l-1,l));
+	productExit(Number(e.target.id.substr(l-1,l)));
+}else{ productExit(22); }
+}
+
+
+//Scrollbar code  ______________________________________________________________________________________________________
+var autoscroll=true; var isScrollMove=false; var disM=0;  var isDragCounter=true;
+function scrollthumbmousedown(e){ autoscroll=false;  isScrollMove=true; var sbLeft=Number($getStyle("#scrollthumb","left")[0].left.split("px")[0]); disM=e.clientX-10-sbLeft; }
+function scrollthumbmouseup(e){ isScrollMove=false; disM=0; isDragCounter=true; }
+function myScrollAction(e){
+	if(isScrollMove){ if(isDragCounter){Enabler.counter("Scrollbar drag"); isDragCounter=false;  }
+	var cx=e.clientX-10-disM;cx=cx/5.7;
+	if(cx>=0 && cx<=40){}else{if(cx<=0){cx=0;}else{cx=40;}}
+	 $t("#scrollthumb", {}, {left:  ( cx ) +"%"}, "linear", 0,0);
+	 $t("#productcontainer", {}, {transform: "translate(-"+ ( cx ) +"%)"}, "linear", 0, 0);	 
+	}
+}
+
+function scrollClickHandler(e){  autoscroll=false;Enabler.counter("Scrollbar click");
+var st=$getStyle("#scrollthumb","left,width")[0]; 
+var stw=Number(st.width.split("px")[0]);
+var stl=Number(st.left.split("px")[0])+Number($getStyle("#scrollparent","left")[0].left.split("px")[0]);
+var sl=Number($ge("#scrollthumb")[0].style.left.split("%")[0]); 
+
+if((stl+stw)<e.clientX){
+if(sl%prT != 0){var sk=(40-sl)%prT; sk.toFixed(3); sl=sl+sk; } else{ sl=sl+prT; }
+$t("#scrollthumb", {}, {left:  sl+"%"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5,0);
+$t("#productcontainer", {}, {transform: "translate(-"+sl+"%)"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5, 0);
+}else if(stl>e.clientX){	
+if(sl%prT != 0){var sk=sl%prT; sk.toFixed(3); sl=sl-sk; } else{ sl=sl-prT; }
+$t("#scrollthumb", {}, {left:  sl+"%"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5,0);
+$t("#productcontainer", {}, {transform: "translate(-"+sl+"%)"}, "cubic-bezier(0.500, 0.000, 0.250, 1.000)", 1.5, 0);
+}
+}
+//Scrollbar code END   ______________________________________________________________________________________________________
+
+function pageEventHandler() {
+     $ge("#feature")[0].addEventListener('click', exitClickHandler, false);
+     $ge("#scrollthumb")[0].addEventListener('mousedown', scrollthumbmousedown, false);
+	 $ge("#main-container")[0].addEventListener("mousemove", myScrollAction,false);
+	 $ge("#main-container")[0].addEventListener("mouseup", scrollthumbmouseup,false);
+	 $ge("#main-container")[0].addEventListener("mouseleave", scrollthumbmouseup,false);
+     $ge("#scrollparent")[0].addEventListener('click', scrollClickHandler, false);
+}
+//initial process
+function checkAdVisible(){if (!Enabler.isVisible()) { Enabler.addEventListener( studio.events.StudioEvent.VISIBLE, adVisible); } else { adVisible(); }}
+function pageLoadedHandler() { if (Enabler.isPageLoaded()) {init();} else {Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, init); }}
+function preInit() { if (Enabler.isInitialized()) {pageLoadedHandler();} else {Enabler.addEventListener(studio.events.StudioEvent.INIT, pageLoadedHandler); }}
+window.addEventListener('load', preInit);

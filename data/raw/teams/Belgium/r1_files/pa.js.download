@@ -1,0 +1,62 @@
+
+var $setIH=function(query, txtArray){ var Es=$ge(query); for(var e=0;e<Es.length;e++){ if(Array.isArray(txtArray)){ Es[e].innerHTML = txtArray[e];}else{ Es[e].innerHTML = txtArray; }} }
+ 
+var $ge=function(query){var els=document.querySelectorAll(query); return els;}
+	
+	
+var $ce=function(eType,eId,eclass,estyle){ 
+	var e=document.createElement(eType);
+	if(eId){
+	if(!eclass){eclass=eId;}
+	e.setAttribute("id",eId); 
+	e.setAttribute("class",eclass); 
+	if(estyle){e.setAttribute("style",estyle);}
+	}
+	return e;}
+	
+var $cssToObject=function(cs){  
+	var csA= cs.split(";"); var csObject= new Object();
+	for(var i=0; i<csA.length; i++){if(csA[i].trim() && csA[i].indexOf(":")!=-1 ){ csObject[csA[i].split(":")[0].trim()] = csA[i].split(":")[1].trim();}}
+	return csObject; }
+var $objectToCss=function(o){ var s=""; for(op in o){s+=op+":"+ o[op] +";"} return s;} 	
+
+var $cssToArray=function(css){ 
+	var ap,p=[],v =[]; 
+	if(typeof(css)=="string") { ap=css.split(";"); for(var i=0; i<ap.length; i++){ if(ap[i].trim() && ap[i].indexOf(":")!=-1){ p.push(ap[i].split(":")[0].trim()); v.push(ap[i].split(":")[1]); }}  } 
+	else{ for(c in css){p.push(c); v.push(css[c]);} } 
+	return [p,v];}
+var $setStyle=function(query, css){ 
+	var cssObject=new Object(); var els;
+	if(typeof(css)=="string") {cssObject=$cssToObject(css); } else{ cssObject=css; } 
+	switch(typeof(query)){case "string": els=$ge(query); break; case "object": if(query.id){els=[query];} else {els=query;} break;}
+	for(var i=0; i<els.length;i++){
+		for(c in cssObject){ els[i].style[c]=cssObject[c]; 
+			if(els[i].style.hasOwnProperty('-webkit-'+c)){ els[i].style['-webkit-'+c]=cssObject[c]; }  }}}
+var $getStyle=function(query, properties){ 
+	var nArray=[]; var ps=properties.split(","); var els;
+	switch(typeof(query)){case "string": els=$ge(query); break; case "object": if(query.id){els=[query];} else {els=query;} break;} 
+	for(var i=0; i<els.length;i++){ var nObject = new Object();  for(var j=0;j<ps.length;j++){ nObject[ps[j]] = window.getComputedStyle(els[i], null).getPropertyValue(ps[j]);} nArray.push(nObject);  }
+	return nArray;}
+
+var $t=function(query,initStyle,transitionstyle,timingf,duration,delay,fn){  
+	var aProperties =[]; aProperties = $cssToArray(transitionstyle)[0];  var tCss=";transition-property:"+ aProperties.join(',') +";transition-duration:"+duration+"s;transition-timing-function:"+timingf+";";
+	setTimeout(function(){ 
+		if(initStyle && initStyle!=null){$setStyle(query,initStyle);} if(transitionstyle && transitionstyle!=null ){
+			if(typeof(transitionstyle)=="string") {transitionstyle=transitionstyle+tCss;} else{ transitionstyle['transitionProperty']=aProperties.join(','); transitionstyle['transitionDuration']=duration+"s"; transitionstyle['transitionTimingFunction']=timingf; }
+				$setStyle(query,transitionstyle);}
+	},delay*1000);
+	if(fn){if(fn.hasOwnProperty('start')){setTimeout(fn["start"],delay*1000);}else{if(fn.hasOwnProperty('end')){setTimeout(fn["end"],(delay+duration)*1000);}}}
+	}
+var adderf=0;
+var frs=function(ar){adderf=0;	
+if(document.fonts){	document.fonts.ready.then(function () { for(var i=0;i<ar.length;i++){ frsele(ar[i],ar.length);} });}
+else{setTimeout(function(){ for(var i=0;i<ar.length;i++){ frsele(ar[i],ar.length);} },100)}
+}
+var frsele=function(a,l){		
+	var p=$getStyle("#"+a[0],"width,height")[0];
+	var c=$getStyle("#"+a[1],"width,height,font-size")[0];
+	var pw=Number(p.width.split("px")[0]);var ph=Number(p.height.split("px")[0]);
+	var cw=Number(c.width.split("px")[0]);var ch=Number(c.height.split("px")[0]);var cfs=Number(c['font-size'].split("px")[0]);/*console.log("p",pw,ph,"c",cw,ch,cfs); */
+	if( cw<=pw && ch<=ph ){ $setStyle("#"+a[1],{fontSize:cfs+"px"}); adderf++; if(l==adderf){ loadafter();/*console.log('...');*/ }  }else{  $setStyle("#"+a[1],{fontSize:(cfs-1)+"px"});  setTimeout(function(){frsele(a,l)},100);	}
+}
+/* *************************************************  ****** ****** *************************************** */

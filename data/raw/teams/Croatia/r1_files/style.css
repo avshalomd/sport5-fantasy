@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'Regular';
+    src: url('AzoSans-Regular.otf');
+}  
+
+body, body * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0 none;
+    vertical-align: baseline;
+    font-family: 'Regular', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#main-container {
+    position: relative;
+    opacity: 0; 
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    width: 160px;
+    height: 600px; 
+    border: 1px solid #000; 
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 0;
+    display: none;
+    left: 0px; 
+    top: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#feature {
+    overflow: hidden;
+    width: 160px; 
+    height: 600px;
+    z-index: 1;
+    top: -1px;
+    left: -1px;
+}
+
+/*common styles*/
+.mcommon {
+    position: absolute;
+}
+ 
+.relcommon {    
+    position: relative;         
+}            
+    
+.seccommmon {           
+    display: inline-block; 
+    float: left;        
+    width: 100%;         
+}    
+   
+.transformcommon {  
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%);
+    top: 50%; 
+    left: 50%;        
+    text-align: center;   
+    position: relative;  
+}       
+.margincommon {  
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+}
+
+/*  ------------- User -------------  */
+
+.productcontainer{width: 136px;top: 0;left: 8px;}
+.productc{height: 270px;width: 100%;float: left;margin-top: 10px;border-radius: 10px;overflow: hidden;}
+.imgparent {width: 100%;height: 212px;}
+.cardparent {width: 100%;height: 58px;right: 0;bottom: 0;}
+.imgs {max-width: 100%;max-height: 100%;transform: translate(-50%, 0%);-ms-transform: translate(-50%, 0%);-webkit-transform: translate(-50%, 0%);top: 0%;}
+.productoverlay {width: 100%;height: 100%;top: 0;left: 0;opacity: 0;transition: opacity 0.5s;-webkit-transition: opacity 0.5s;}
+.copyparent {}
+.copytxtparent {line-height: 1.3;float: left;display: inline-block;font-size: 16px;}
+.copyparent1 {width: 110px;height: 50px;margin: 0 auto;left: 0;right: 0;bottom: 110px;}
+.copytxtparent1 {transform: translate(-50%, -100%);-ms-transform: translate(-50%, -100%);-webkit-transform: translate(-50%, -100%);top: 100%;}
+.copyparent2 {width: 110px;height: 50px;margin: 0 auto;left: 0;right: 0;top: 104px;}
+.copytxtparent2 {transform: translate(-50%, 0%);-ms-transform: translate(-50%, 0%);-webkit-transform: translate(-50%, 0%);top: 0%;font-size: 13px;}
+.cardparent {}
+.priceparent {width: 100px;height: 50px;left: 10px;top: 0;}
+.pricetxt {float: left;display: inline-block;font-size: 14px;text-align: left;transform: translate(0%, -50%);-ms-transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);left: 0%;line-height: 1.3;}
+.ctaparent {width: 24px;height: 24px;right: 10px;border-radius: 12px;top: -3px;bottom: 0;margin: auto 0;overflow: hidden;}
+.ctatxtparent {width: 60%;height: 70%;top: 0;left: 0;right: 0;bottom: 0px;margin: auto;}
+.ctatxt {line-height: 1;display: inline-block;float: left;font-size: 14px;width: 100%;height: 100%;}
+.copycontainer {width: 100%;height: 158px;bottom: 0px;border-radius: 10px 10px 0px 0px;overflow: hidden;}
+.logoimgparent {width: 100px;height: 34px;bottom: 16px;left: 0;right: 0;margin: 0 auto;}
+.logoimg {max-width: 100%;max-height: 100%;}
+#copyparent1{width: 114px;height: 20px;margin: 0 auto;left: 0;right: 0;bottom: 108px;}
+#copytxtparent1{font-size: 18px;}
+#copyparent2{width: 114px;height: 40px;margin: 0 auto;left: 0;right: 0;bottom: 68px;}
+#copytxtparent2{}
+.imgparent:hover .productoverlay(even) {opacity: 1;}
+.productc:nth-child(even) .productoverlay {opacity: 1;}
+.productc:nth-child(even) .imgparent:hover .productoverlay {opacity: 0;}
+.ctaparent svg{width: 100%;height: 100%;}
+
+.scrollparent{width: 6px;height: 520px;right: 4px;top: 10px;border-radius: 10px;z-index: 1;}
+.scrollthumb{border-radius: 10px;width: 100%;height: 33%;}
+
+.productc:hover .ctatxtparent{animation:ctaAni 1.5s infinite;-webkit-animation:ctaAni 1.5s infinite;}
+@keyframes ctaAni {0%{transform: translate(0px);-webkit-transform: translate(0px);} 25%{transform: translate(30px);-webkit-transform: translate(30px);}  25.5%{transform: translate(-30px);-webkit-transform: translate(-30px);}  50%,100%{transform: translate(0px);-webkit-transform: translate(0px);} }
+@-webkit-keyframes ctaAni {0%{transform: translate(0px);-webkit-transform: translate(0px);} 25%{transform: translate(30px);-webkit-transform: translate(30px);}  25.5%{transform: translate(-30px);-webkit-transform: translate(-30px);}  50%,100%{transform: translate(0px);-webkit-transform: translate(0px);} }
+
+
+
+
+
+

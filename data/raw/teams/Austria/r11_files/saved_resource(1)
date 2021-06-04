@@ -1,0 +1,48 @@
+
+var ftGUID_5500931="4637FDEA9B2B52";
+var ftConfID_5500931="0";
+var ftParams_5500931="ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.whoscored.com%2FTeams%2F324%2FShow%2FAustria-Austria&us_privacy=${US_PRIVACY}&cachebuster=29242.05222018683&ft_section=87438609098795430683977314654636090452&ft_keyword=__13330890__498434__";
+var ftKeyword_5500931="";
+var ftCustom_5500931="";
+var ftSection_5500931="87438609098795430683977314654636090452";
+var ftSegment_5500931="w2b";
+var ftSegmentList_5500931=[{s:'w2b'}];
+var ftRuleMatch_5500931="0";
+var ftTimestamp_5500931="1622783784";
+var ftGeoC2_5500931="il";
+var ftGeoState_5500931="ha";
+var ftGeoCity_5500931="yagur";
+var ftISP_5500931="israel internet association";
+var ftSpeed_5500931="broadband";
+var ftDMA_5500931="-1";
+var ftLong_5500931="35.08";
+var ftLat_5500931="32.74";
+var ftPostal_5500931="30065 00";
+var ftTimeZone_5500931="300";
+var ftMobileCarrier_5500931="";
+var ftImp5500931 = {};
+ftImp5500931.privacy = "x";
+ftImp5500931.guidAge = "266";
+ftImp5500931.impID = "02A9AEFF-F095-3208-7C01-2F6A1B62C040";
+ftImp5500931.duid = "FT:4637FDEA9B2B52";
+
+ftImp5500931.ft_tpplid = "";
+ftImp5500931.ft_c = {};
+ftImp5500931.gdpr = "";
+ftImp5500931.gdpr_consent = "";
+ftImp5500931.gdpr_pd = "";
+ftImp5500931.oob_consent = "0";
+ftImp5500931.gdprStoredConsent = "";
+ftImp5500931.us_privacy = "!!US_PRIVACY!";
+
+ftImp5500931.jsAppend = "1";
+(function(){
+    var tag = document.getElementById('ft_servedby_5500931') || (function(s){
+    	return s[s.length-1];
+    }(document.getElementsByTagName('script'))),
+           js = document.createElement('script');
+    js.src = 
+"https://cdn.flashtalking.com/xre/550/5500931/3417392/js/j-5500931-3417392.js";
+    js.id = "ftscript_m5500931";
+    tag.parentNode.insertBefore(js, tag);
+}());

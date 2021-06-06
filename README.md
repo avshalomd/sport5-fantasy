@@ -16,7 +16,9 @@ Data driven, fantasy football, lineups generator
 
 ## Create env and install requirements
 `cd sport5-fantasy`
+
 `conda create --name fantasy --file requirements.txt`
+
 `conda activate fantasy`
 
 

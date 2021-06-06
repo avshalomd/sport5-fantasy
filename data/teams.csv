@@ -1,25 +1,25 @@
-name_h,name_e,theguardian_pr,fifa_ranking,reddit1_pr,reddit2_pr,my_pr,bets_odds,form_last6
-צרפת,France ,1,2,1,1,2,4.68,WWWDWW
-אנגליה,England ,4,3,8,9,1,5.03,WWWWWL
-בלגיה,Belgium ,3,1,2,6,5,6.20,WDWWWW
-ספרד,Spain ,10,5,5,3,7,7.87,WWDWDD
-גרמניה,Germany ,2,8,9,4,3,7.93,DLWWLW
-פורטוגל,Portugal ,6,4,3,2,10,8.59,WDWWLW
-איטליה,Italy ,7,6,4,5,4,10.37,WWWWWW
-הולנד,Netherlands ,16,11,6,7,6,12.26,DWWLWW
-דנמרק,Denmark ,8,7,7,10,8,27.05,DWWWLW
-קרואטיה,Croatia ,18,10,13,8,11,34.27,DWWLLL
-טורקיה,Turkey ,5,17,10,11,9,52.27,DWDWWL
-שווייץ,Switzerland ,11,9,11,12,12,73.68,WWWWDL
-פולין,Poland ,13,14,14,15,14,79.91,DLWDLL
-אוקראינה,Ukraine ,20,16,15,20,15,86.18,DDDLLW
-שבדיה,Sweden ,12,13,12,13,16,90.00,WWWWLW
-אוסטריה,Austria ,14,15,18,14,17,111.55,LLWDDW
-רוסיה,Russia ,17,20,20,16,19,115.23,DLWWLL
-צ`כיה,Czech Republic,9,21,17,19,13,134.18,LDWWWL
-וויילס,Wales ,15,12,16,18,18,160.05,LWWLWW
-סקוטלנד,Scotland ,21,22,22,23,20,238.64,DWDDLL
-סלובקיה,Slovakia ,24,18,24,21,22,352.59,DWDDLW
-פינלנד,Finland,22,23,21,22,21,407.14,LLDDLW
-הונגריה,Hungary ,19,19,19,17,23,430.09,WWDWDW
-צפון מקדוניה,North Macedonia,23,24,23,24,24,493.37,DWWLLW
+name_h,name_e,theguardian_pr,fifa_ranking,reddit1_pr,reddit2_pr,my_pr,bets_odds,form_last6,gfpg,gapg
+צרפת,France,1,2,1,1,2,4.68,WWWDWW,2.5,0.6
+אנגליה,England,4,3,8,9,1,5.03,WWWWWL,4.625,0.75
+בלגיה,Belgium,3,1,2,6,5,6.2,WDWWWW,4,0.3
+ספרד,Spain,10,5,5,3,7,7.87,WWDWDD,3.1,0.5
+גרמניה,Germany,2,8,9,4,3,7.93,DLWWLW,3.75,0.875
+פורטוגל,Portugal,6,4,3,2,10,8.59,WDWWLW,2.75,0.75
+איטליה,Italy,7,6,4,5,4,10.37,WWWWWW,3.7,0.4
+הולנד,Netherlands,16,11,6,7,6,12.26,DWWLWW,3,0.875
+דנמרק,Denmark,8,7,7,10,8,27.05,DWWWLW,2.875,0.75
+קרואטיה,Croatia,18,10,13,8,11,34.27,DWWLLL,2.125,0.875
+טורקיה,Turkey,5,17,10,11,9,52.27,DWDWWL,1.8,0.3
+שווייץ,Switzerland,11,9,11,12,12,73.68,WWWWDL,2.375,0.75
+פולין,Poland,13,14,14,15,14,79.91,DLWDLL,1.8,0.5
+אוקראינה,Ukraine,20,16,15,20,15,86.18,DDDLLW,2.125,0.5
+שבדיה,Sweden,12,13,12,13,16,90,WWWWLW,2.3,0.9
+אוסטריה,Austria,14,15,18,14,17,111.55,LLWDDW,1.9,0.9
+רוסיה,Russia,17,20,20,16,19,115.23,DLWWLL,2.5,0.8
+צ`כיה,Czech Republic,9,21,17,19,13,134.18,LDWWWL,1.625,1.375
+וויילס,Wales,15,12,16,18,18,160.05,LWWLWW,1.25,0.75
+סקוטלנד,Scotland,21,22,22,23,20,238.64,DWDDLL,1.41666666666667,1.66666666666667
+סלובקיה,Slovakia,24,18,24,21,22,352.59,DWDDLW,1.5,1.2
+פינלנד,Finland,22,23,21,22,21,407.14,LLDDLW,1.6,1
+הונגריה,Hungary,19,19,19,17,23,430.09,WWDWDW,1.3,1.3
+צפון מקדוניה,North Macedonia,23,24,23,24,24,493.37,DWWLLW,1.25,1.16666666666667

@@ -1,5 +1,5 @@
-﻿name_h,name_e,team,is_penalty_taker,is_starter
-אלכסנדר שלאגר,Alexander Schlager,אוסטריה,0,1
+name_h,name_e,team,is_penalty_taker,is_starter
+אלכסנדר שלאגר,Alexander Schlager,אוסטריה,0,0
 דניאל באכמן,,אוסטריה,0,0
 פאבאו פרבאן,Pavao Pervan,אוסטריה,0,0
 אלכסנדר דרגוביץ',Aleksandar Dragovic,אוסטריה,0,1
@@ -17,11 +17,11 @@
 אלסנדרו שוף,Alessandro Schöpf,אוסטריה,0,0
 ולנטינו לזארו,Valentino Lazaro,אוסטריה,0,0
 יוליאן באומגרטלינגר,Julian Baumgartlinger,אוסטריה,0,1
-פלוריאן גריליץ',Florian Grillitsch,אוסטריה,0,1
+פלוריאן גריליץ',Florian Grillitsch,אוסטריה,0,0
 קונרד ליימר,,אוסטריה,0,0
 קסאבר שלאגר,Xaver Schlager,אוסטריה,0,0
 שטפן אילזנקר,Stefan Ilsanker,אוסטריה,0,0
-מרקו ארנאוטוביץ',Marko Arnautovic,אוסטריה,0,1
+מרקו ארנאוטוביץ',Marko Arnautovic,אוסטריה,0,0
 סשה קלאידזיץ',Sasa Kalajdzic,אוסטריה,0,1
 כרים אוניסיוו,Karim Onisiwo,אוסטריה,0,0
 מיכאל גרגוריץ',Michael Gregoritsch,אוסטריה,0,0
@@ -32,7 +32,7 @@
 אלכסנדר קראבייב,Oleksandr Karavaev,אוקראינה,0,1
 ויטלי מיקולנקו,Vitalii Mykolenko,אוקראינה,0,1
 מיקולה מטביינקו,Mykola Matvienko,אוקראינה,0,1
-סרגיי קריבצוב,Serhii Kryvtsov,אוקראינה,0,1
+סרגיי קריבצוב,Serhii Kryvtsov,אוקראינה,0,0
 דניס פופוב,,אוקראינה,0,0
 אדוארד סובול,Eduard Sobol,אוקראינה,0,0
 איליה זבארני,Illia Zabarnyi,אוקראינה,0,1
@@ -56,7 +56,7 @@
 אלסנדרו באסטוני,Alessandro Bastoni,איטליה,0,0
 אלסנדרו פלורנצי,Alessandro Florenzi,איטליה,0,1
 לאונרדו בונוצ'י,Leonardo Bonucci,איטליה,0,1
-אמרסון,Emerson,איטליה,0,1
+אמרסון,Emerson,איטליה,0,0
 ג'יורג'יו קייליני,Giorgio Chiellini,איטליה,0,1
 לאונרדו ספינצולה,Leonardo Spinazzola,איטליה,0,1
 ג'ובאני די לורנצו,Giovanni Di Lorenzo,איטליה,0,0
@@ -64,11 +64,11 @@
 רפאל טולוי,Rafael Tolói,איטליה,0,0
 לורנצו אינסינייה,Lorenzo Insigne,איטליה,0,1
 דומניקו ברארדי,Domenico Berardi,איטליה,0,0
-פדריקו קייזה,Federico Chiesa,איטליה,0,1
+פדריקו קייזה,Federico Chiesa,איטליה,0,0
 לורנצו פלגריני,Lorenzo Pellegrini,איטליה,0,0
 פדריקו ברנרדרסקי,Federico Bernardeschi,איטליה,0,0
 ז'ורז'יניו,Jorginho,איטליה,1,1
-מרקו וראטי,Marco Verratti,איטליה,0,1
+מרקו וראטי,Marco Verratti,איטליה,0,0
 ניקולו בארלה,Nicolò Barella,איטליה,0,1
 בריאן כריסטנטה,Bryan Cristante,איטליה,0,0
 מנואל לוקאטלי,Manuel Locatelli,איטליה,0,1
@@ -79,9 +79,9 @@
 ג'ורדן פיקפורד,Jordan Pickford,אנגליה,0,1
 דין הנדרסון,,אנגליה,0,0
 סאם ג'ונסטון,,אנגליה,0,0
-בן צ'ילוול,Ben Chilwell,אנגליה,0,1
+בן צ'ילוול,Ben Chilwell,אנגליה,0,0
 ג'ון סטונס,John Stones,אנגליה,0,1
-הארי מגווייר,Harry Maguire,אנגליה,0,1
+הארי מגווייר,Harry Maguire,אנגליה,0,0
 קייל ווקר,Kyle Walker,אנגליה,0,1
 טיירון מינגס,Tyrone Mings,אנגליה,0,1
 לוק שואו,Luke Shaw,אנגליה,0,0
@@ -90,7 +90,7 @@
 ריס ג'יימס,Reece James,אנגליה,0,0
 ג'יידון סאנצ'ו,Jadon Sancho,אנגליה,0,0
 מרכוס רשפורד,Marcus Rashford,אנגליה,0,0
-ראחים סטרלינג,Raheem Sterling,אנגליה,0,1
+ראחים סטרלינג,Raheem Sterling,אנגליה,0,0
 פיל פודן,Phil Foden,אנגליה,0,1
 מייסון מאונט,Mason Mount,אנגליה,0,1
 ג'ק גריליש,Jack Grealish,אנגליה,0,0
@@ -108,23 +108,23 @@
 יאן ורטונגן,Jan Vertonghen,בלגיה,0,1
 תומא מונייה,Thomas Meunier,בלגיה,0,1
 ג'ייסון דנאייר,Jason Denayer,בלגיה,0,1
-תומאס ורמאלן,Thomas Vermaelen,בלגיה,0,1
+תומאס ורמאלן,Thomas Vermaelen,בלגיה,0,0
 דדריק בויאטה,Dedryck Boyata,בלגיה,0,0
 טימותי קסטאן,Timothy Castagne,בלגיה,0,0
-קווין דה בריינה,Kevin De Bruyne,בלגיה,0,1
-אדן הזאר,,בלגיה,0,1
-יאניק קראסקו,Yannick Carrasco,בלגיה,0,0
-טורגן הזאר,Thorgan Hazard,בלגיה,0,1
+קווין דה בריינה,Kevin De Bruyne,בלגיה,0,0
+אדן הזאר,,בלגיה,0,0
+יאניק קראסקו,Yannick Carrasco,בלגיה,0,1
+טורגן הזאר,Thorgan Hazard,בלגיה,0,0
 האנס ואנקן,Hans Vanaken,בלגיה,0,0
 ז'רמי דוקו,Jéremy Doku,בלגיה,0,0
 יורי טיילמנס,Youri Tielemans,בלגיה,0,1
-אקסל ויטסל,Axel Witsel,בלגיה,0,1
+אקסל ויטסל,Axel Witsel,בלגיה,0,0
 דניס פראט,Dennis Praet,בלגיה,0,0
 לאנדר דנדונקר,Leander Dendoncker,בלגיה,0,1
 לאנדרו טרוסארד,Leandro Trossard,בלגיה,0,0
 נאסר צ'אדלי,Nacer Chadli,בלגיה,0,0
 רומלו לוקאקו,Romelu Lukaku,בלגיה,1,1
-דריס מרטנס,Dries Mertens,בלגיה,0,1
+דריס מרטנס,Dries Mertens,בלגיה,0,0
 כריסטיאן בנטקה,Christian Benteke,בלגיה,0,0
 מיצ'י באטשואי,Michy Batshuayi,בלגיה,0,0
 מנואל נוייר,Manuel Neuer,גרמניה,0,1
@@ -132,18 +132,18 @@
 קווין טראפ,Kevin Trapp,גרמניה,0,0
 אנטוניו רודיגר,Antonio Rüdiger,גרמניה,0,1
 מאטס הומלס,,גרמניה,0,1
-מתיאס גינטר,Matthias Ginter,גרמניה,0,1
+מתיאס גינטר,Matthias Ginter,גרמניה,0,0
 אמרה צ'אן,Emre Can,גרמניה,0,0
-מרסל הלסטנברג,Marcel Halstenberg,גרמניה,0,1
+מרסל הלסטנברג,Marcel Halstenberg,גרמניה,0,0
 ניקלאס זולה,,גרמניה,0,1
-רובין גוסנס,Robin Gosens,גרמניה,0,0
-לוקאס קלוסטרמן,Lukas Klostermann,גרמניה,0,1
+רובין גוסנס,Robin Gosens,גרמניה,0,1
+לוקאס קלוסטרמן,Lukas Klostermann,גרמניה,0,0
 כריסטיאן גאנטר,,גרמניה,0,0
 רובין קוך,Robin Koch,גרמניה,0,0
 לירוי סאנה,Leroy Sané,גרמניה,0,1
 תומאס מולר,,גרמניה,0,1
-קאי האברץ,Kai Havertz,גרמניה,0,1
-אילקאי גונדואן,Ilkay Gündogan,גרמניה,1,1
+קאי האברץ,Kai Havertz,גרמניה,0,0
+אילקאי גונדואן,Ilkay Gündogan,גרמניה,1,0
 לאון גורצקה,Leon Goretzka,גרמניה,0,0
 טוני קרוס,Toni Kroos,גרמניה,0,1
 יוזואה קימיך,Joshua Kimmich,גרמניה,0,1
@@ -151,7 +151,7 @@
 יונאס הופמן,,גרמניה,0,0
 פלוריאן נויהאוס,Florian Neuhaus,גרמניה,0,0
 סרג' גנאברי,Serge Gnabry,גרמניה,0,1
-טימו ורנר,Timo Werner,גרמניה,0,1
+טימו ורנר,Timo Werner,גרמניה,0,0
 קווין פולאנד,,גרמניה,0,0
 קספר שמייכל,Kasper Schmeichel,דנמרק,0,1
 יונאס לוסל,,דנמרק,0,0
@@ -175,13 +175,13 @@
 אנדרס כריסטיאנסן,Andreas Christensen,דנמרק,0,0
 כריסטיאן נורגורד,Christian Nørgaard,דנמרק,0,0
 מרטין בריית'ווייט,Martin Braithwaite,דנמרק,0,1
-יונאס ווינד,Jonas Wind,דנמרק,0,1
+יונאס ווינד,Jonas Wind,דנמרק,0,0
 יוסוף פולסן,Yussuf Poulsen,דנמרק,0,1
 אנדראס קורנליוס,Andreas Cornelius,דנמרק,0,0
 קספר דולברג,Kasper Dolberg,דנמרק,0,0
 טים קרול,Tim Krul,הולנד,0,1
 מרקו ביזוט,,הולנד,0,0
-מארטן סטקלנבורך,,הולנד,0,1
+מארטן סטקלנבורך,,הולנד,0,0
 אואן וינדאל,Owen Wijndal,הולנד,0,1
 דיילי בלינד,Daley Blind,הולנד,0,1
 דנזל דמפריס,Denzel Dumfries,הולנד,0,1
@@ -191,11 +191,11 @@
 נייתן אקה,Nathan Aké,הולנד,0,0
 יוריין טימבר,,הולנד,0,0
 פטריק ואן אנהולט,,הולנד,0,0
-סטיבן ברחאוס,Steven Berghuis,הולנד,0,1
+סטיבן ברחאוס,Steven Berghuis,הולנד,0,0
 ג'ורג'יניו ווינאלדום,Georginio Wijnaldum,הולנד,0,1
 דייבי קלאסן,Davy Klaassen,הולנד,0,1
 קווינסי פרומס,Quincy Promes,הולנד,0,0
-דוני ואן דה ביק,Donny van de Beek,הולנד,0,1
+דוני ואן דה ביק,Donny van de Beek,הולנד,0,0
 פרנקי דה יונג,Frenkie de Jong,הולנד,0,1
 קודי גאקפו,,הולנד,0,0
 מרטן דה רון,Marten de Roon,הולנד,0,0
@@ -204,17 +204,17 @@
 ממפיס דפאיי,Memphis Depay,הולנד,1,1
 ואוט וחהורסט,,הולנד,0,0
 לוק דה יונג,Luuk de Jong,הולנד,0,1
-דונייל מאלן,Donyell Malen,הולנד,0,1
+דונייל מאלן,Donyell Malen,הולנד,0,0
 פיטר גולאצ'י,Péter Gulácsi,הונגריה,0,1
 אדם בוגדן,,הונגריה,0,0
 דנש דיבוס,Dénes Dibusz,הונגריה,0,0
 אדם לאנג,Ádám Lang,הונגריה,0,0
 אטילה סאלאי,Attila Szalai,הונגריה,0,1
-אטילה פיולה,,הונגריה,0,1
+אטילה פיולה,,הונגריה,0,0
 גרגו לוברנצ'יץ',Gergo Lovrencsics,הונגריה,0,0
 ווילי אורבאן,Willi Orban,הונגריה,0,1
 לויק נגו,Loic Nego,הונגריה,0,0
-אנדרה בוטקה,Endre Botka,הונגריה,0,1
+אנדרה בוטקה,Endre Botka,הונגריה,0,0
 אקוש קצ'קש,Ákos Kecskés,הונגריה,0,0
 בנדגוש בולה,,הונגריה,0,0
 לאסלו קליינהייזלר,László Kleinheisler,הונגריה,0,1
@@ -225,7 +225,7 @@
 רולנד שאלאי,Roland Sallai,הונגריה,0,1
 תמאס צ'רי,Tamas Cseri,הונגריה,0,0
 דויד סיגר,Dávid Miklós Sigér,הונגריה,0,0
-דניאל גזדג,Daniel Gazdag,הונגריה,0,1
+דניאל גזדג,Daniel Gazdag,הונגריה,0,0
 סבולץ שון,,הונגריה,0,0
 רולנד ורגה,Roland Varga,הונגריה,0,0
 אדם סאלאי,Ádám Szalai,הונגריה,1,1
@@ -262,7 +262,7 @@
 מרט גונוק,,טורקיה,0,0
 אוזן קאבאק,Ozan Kabak,טורקיה,0,0
 זקי צ'ליק,,טורקיה,0,1
-מריח דמיראל,Merih Demiral,טורקיה,0,1
+מריח דמיראל,Merih Demiral,טורקיה,0,0
 צ'לאר סויונג'ו,Çaglar Söyüncü,טורקיה,0,1
 קאן אייהאן,Kaan Ayhan,טורקיה,0,0
 אומוט מראש,Umut Meras,טורקיה,0,1
@@ -295,23 +295,23 @@
 מארק האמשיק,Marek Hamsik,סלובקיה,1,1
 ולדימיר וייס,,סלובקיה,0,0
 אונדרי דודה,Ondrej Duda,סלובקיה,0,1
-יוראי קוצקה,,סלובקיה,0,1
+יוראי קוצקה,,סלובקיה,0,0
 רוברט מאק,Róbert Mak,סלובקיה,0,1
 אריק יירקה,,סלובקיה,0,0
 לוקאש הראסלין,Lukás Haraslín,סלובקיה,0,0
 לסלו בנס,,סלובקיה,0,0
-פטריק הרושובסקי,Patrik Hrosovsky,סלובקיה,0,1
+פטריק הרושובסקי,Patrik Hrosovsky,סלובקיה,0,0
 מאתוש ברו,Matús Bero,סלובקיה,0,0
 סטניסלב לובוטקה,Stanislav Lobotka,סלובקיה,0,0
 תומאש סוסלוב,Tomás Suslov,סלובקיה,0,0
 דויד סטרלץ,David Strelec,סלובקיה,0,0
 מיכאל ג'וריש,Michal Duris,סלובקיה,0,0
-רוברט בוז'ניק,Róbert Bozeník,סלובקיה,0,1
+רוברט בוז'ניק,Róbert Bozeník,סלובקיה,0,0
 אונאי סימון,Unai Simón,ספרד,0,1
 דויד דה חאה,David de Gea,ספרד,0,0
 רוברט סאנצ'ס,,ספרד,0,0
 ג'ורדי אלבה,Jordi Alba,ספרד,0,1
-מרקוס יורנטה,Marcos Llorente,ספרד,0,1
+מרקוס יורנטה,Marcos Llorente,ספרד,0,0
 אמריק לאפורט,,ספרד,0,1
 פאו טורס,Pau Torres,ספרד,0,1
 אריק גרסיה,Eric García,ספרד,0,0
@@ -319,9 +319,9 @@
 חוסה גאיה,José Gayà,ספרד,0,0
 דייגו יורנטה,Diego Llorente,ספרד,0,0
 פראן טורס,Ferran Torres,ספרד,0,1
-דני אולמו,Dani Olmo,ספרד,0,1
+דני אולמו,Dani Olmo,ספרד,0,0
 מיקל אוירסבאל,Mikel Oyarzabal,ספרד,0,0
-טיאגו אלקנטרה,Thiago,ספרד,0,1
+טיאגו אלקנטרה,Thiago,ספרד,0,0
 פבלו סראביה,,ספרד,0,0
 פדרי,Pedri,ספרד,0,1
 קוקה,Koke,ספרד,0,1
@@ -329,7 +329,7 @@
 אדאמה טראורה,Adama Traoré,ספרד,0,0
 סרחיו בוסקטס,Sergio Busquets,ספרד,0,0
 פביאן רואיס,Fabián Ruiz,ספרד,0,0
-אלבארו מוראטה,Álvaro Morata,ספרד,1,1
+אלבארו מוראטה,Álvaro Morata,ספרד,1,0
 ג'רארד מורנו,,ספרד,0,0
 קרייג גורדון,Craig Gordon,סקוטלנד,0,0
 ג'ון מקלולין,Kenny McLean,סקוטלנד,0,0
@@ -348,7 +348,7 @@
 ג'יימס פורסט,James Forrest,סקוטלנד,0,0
 סקוט מקטומיניי,Scott McTominay,סקוטלנד,0,1
 קווין ניסבט,Kevin Nisbet,סקוטלנד,0,0
-ריאן פרייזר,Ryan Fraser,סקוטלנד,0,1
+ריאן פרייזר,Ryan Fraser,סקוטלנד,0,0
 בילי גילמור,,סקוטלנד,0,0
 דייויד טרנבול,,סקוטלנד,0,0
 סטיוארט ארמסטרונג,Stuart Armstrong,סקוטלנד,0,0
@@ -370,7 +370,7 @@
 פאבל דוידוביץ',Pawel Dawidowicz,פולין,0,0
 קמיל פיאטקובסקי,Kamil Piatkowski,פולין,0,0
 פיוטר זיילינסקי,Piotr Zielinski,פולין,0,1
-גז'גוז' קריכוביאק,Grzegorz Krychowiak,פולין,0,1
+גז'גוז' קריכוביאק,Grzegorz Krychowiak,פולין,0,0
 יאקוב מודר,Jakub Moder,פולין,0,0
 מתאוש קליש,Mateusz Klich,פולין,0,1
 קרול לינטי,Karol Linetty,פולין,0,0
@@ -389,7 +389,7 @@
 רובן דיאס,Rúben Dias,פורטוגל,0,1
 רפאל גריירו,Raphael Guerreiro,פורטוגל,0,1
 פפה,Pepe,פורטוגל,0,1
-ז'וזה פונטה,José Fonte,פורטוגל,0,1
+ז'וזה פונטה,José Fonte,פורטוגל,0,0
 נונו מנדש,Nuno Mendes,פורטוגל,0,0
 נלסון סמדו,Nélson Semedo,פורטוגל,0,0
 ברונו פרננדש,Bruno Fernandes,פורטוגל,0,1
@@ -402,22 +402,22 @@
 רובן נבס,Rúben Neves,פורטוגל,0,0
 רנאטו סאנצ'ס,,פורטוגל,0,0
 דנילו פריירה,Danilo Pereira,פורטוגל,0,1
-וויליאם קרבאליו,William Carvalho,פורטוגל,0,1
+וויליאם קרבאליו,William Carvalho,פורטוגל,0,0
 ז'ואאו פלהיניה,João Palhinha,פורטוגל,0,0
 כריסטיאנו רונאלדו,Cristiano Ronaldo,פורטוגל,1,1
 דיוגו ז'וטה,Diogo Jota,פורטוגל,0,1
-ז'ואאו פליקס,João Félix,פורטוגל,0,1
+ז'ואאו פליקס,João Félix,פורטוגל,0,0
 אנדרה סילבה,André Silva,פורטוגל,0,0
 לוקאס הרדצקי,Lukás Hrádecky,פינלנד,0,1
 אנסי יאקולה,,פינלנד,0,0
 יסה יורונן,,פינלנד,0,0
-ירה אורונן,Jere Uronen,פינלנד,0,1
-ליאו ואיסנן,Leo Väisänen,פינלנד,0,1
-ניקולאי אלהו,Nikolai Alho,פינלנד,0,1
+ירה אורונן,Jere Uronen,פינלנד,0,0
+ליאו ואיסנן,Leo Väisänen,פינלנד,0,0
+ניקולאי אלהו,Nikolai Alho,פינלנד,0,0
 סאולי ואיסנן,,פינלנד,0,0
 רוברט איבנוב,,פינלנד,0,0
 תומאס לאם,Thomas Lam,פינלנד,0,0
-דניאל אושאוגנסי,Daniel O'Shaughnessy,פינלנד,0,1
+דניאל אושאוגנסי,Daniel O'Shaughnessy,פינלנד,0,0
 יונה טויביו,Joona Toivio,פינלנד,0,1
 יוקה רייטאלה,Jukka Raitala,פינלנד,0,1
 פאולוס אראיורי,Paulus Arajuuri,פינלנד,0,1
@@ -429,11 +429,11 @@
 טים ספארב,Tim Sparv,פינלנד,0,1
 פירי סוירי,Pyry Soiri,פינלנד,0,0
 רוברט טיילור,Robert Taylor,פינלנד,0,0
-רסמוס שולר,Rasmus Schüller,פינלנד,0,1
-יוני קאוקו,Joni Kauko,פינלנד,0,1
+רסמוס שולר,Rasmus Schüller,פינלנד,0,0
+יוני קאוקו,Joni Kauko,פינלנד,0,0
 טימו פוקי,Teemu Pukki,פינלנד,1,1
-יואל פויינפלו,Joel Pohjanpalo,פינלנד,0,1
-מרקוס פורס,Marcus Forss,פינלנד,0,0
+יואל פויינפלו,Joel Pohjanpalo,פינלנד,0,0
+מרקוס פורס,Marcus Forss,פינלנד,0,1
 תומאש ואצליק,Tomás Vaclik,צ`כיה,0,1
 אלש מנדוס,Ales Mandous,צ`כיה,0,0
 תומאש קובק,Tomás Koubek,צ`כיה,0,0
@@ -446,7 +446,7 @@
 יאקוב ברבץ,Jakub Brabec,צ`כיה,0,0
 אלש מאטייו,Ales Mateju,צ`כיה,0,0
 תומאש סוצ'ק,Tomas Soucek,צ`כיה,0,1
-אנטונין באראק,Antonin Barak,צ`כיה,0,1
+אנטונין באראק,Antonin Barak,צ`כיה,0,0
 ולדימיר דארידה,Vladimír Darida,צ`כיה,1,1
 יאקוב יאנקטו,Jakub Jankto,צ`כיה,0,1
 יאקוב פשק,Jakub Pesek,צ`כיה,0,0
@@ -472,7 +472,7 @@
 קירה ריסטבסקי,Kire Ristevski,צפון מקדוניה,0,1
 אליף אלמאס,Eljif Elmas,צפון מקדוניה,0,1
 אלכסנדר טראיקובסקי,Aleksandar Trajkovski,צפון מקדוניה,0,1
-אניס בארדי,Enis Bardhi,צפון מקדוניה,0,1
+אניס בארדי,Enis Bardhi,צפון מקדוניה,0,0
 מריאן ראדסקי,Marjan Radeski,צפון מקדוניה,0,0
 אריאן אדמי,Arijan Ademi,צפון מקדוניה,0,1
 בובאן ניקולוב,Boban Nikolov,צפון מקדוניה,0,1
@@ -508,7 +508,7 @@
 קורנטין טוליסו,Corentin Tolisso,צרפת,0,0
 מוסא סיסוקו,Moussa Sissoko,צרפת,0,0
 קיליאן אמבפה,Kylian Mbappé,צרפת,0,1
-כרים בנזמה,,צרפת,0,1
+כרים בנזמה,,צרפת,0,0
 אוליביה ז'ירו,Olivier Giroud,צרפת,0,0
 וויסאם בן יידר,Wissam Ben Yedder,צרפת,0,0
 מרקוס תוראם,Marcus Thuram,צרפת,0,0
@@ -517,7 +517,7 @@
 סימון סלוגה,,קרואטיה,0,0
 בורנה בארישיץ',Borna Barisic,קרואטיה,0,1
 דומאגוי וידה,Domagoj Vida,קרואטיה,0,1
-דיאן לוברן,Dejan Lovren,קרואטיה,0,1
+דיאן לוברן,Dejan Lovren,קרואטיה,0,0
 שימה ורסאליקו,Sime Vrsaljko,קרואטיה,0,1
 דוייה צ'אלטה-צאר,Duje Caleta-Car,קרואטיה,0,1
 דומאגוי בראדריץ',Domagoj Bradaric,קרואטיה,0,0
@@ -525,7 +525,7 @@
 יושקו גברדיול,,קרואטיה,0,0
 מילה שקוריץ',Mile Skoric,קרואטיה,0,0
 איבן פרישיץ',Ivan Perisic,קרואטיה,0,1
-אנטה רביץ',Ante Rebic,קרואטיה,0,1
+אנטה רביץ',Ante Rebic,קרואטיה,0,0
 ניקולה ולאשיץ',Nikola Vlasic,קרואטיה,0,1
 לוקה מודריץ',Luka Modric,קרואטיה,1,1
 מיסלאב אורשיץ',Mislav Orsic,קרואטיה,0,0
@@ -535,17 +535,17 @@
 מתאו קובאצ'יץ',Mateo Kovacic,קרואטיה,0,0
 לוקה איבנושץ,,קרואטיה,0,0
 מילאן באדלי,Milan Badelj,קרואטיה,0,0
-ברונו פטקוביץ',Bruno Petkovic,קרואטיה,0,1
+ברונו פטקוביץ',Bruno Petkovic,קרואטיה,0,0
 אנדרי קרמאריץ',Andrej Kramaric,קרואטיה,0,0
 אנטה בודימיר,Ante Budimir,קרואטיה,0,0
 אנטון שונין,Anton Shunin,רוסיה,0,1
 מאטביי סאפונוב,,רוסיה,0,0
 יורי דיופין,,רוסיה,0,0
-מריו פרננדס,Mario Fernandes,רוסיה,0,1
+מריו פרננדס,Mario Fernandes,רוסיה,0,0
 אנדריי סמנוב,Andrey Semenov,רוסיה,0,1
 גיאורגי דז'יקיה,Georgi Dzhikiya,רוסיה,0,1
 יורי ז'ירקוב,Yuri Zhirkov,רוסיה,0,1
-פדור קודריאשוב,Fedor Kudryashov,רוסיה,0,1
+פדור קודריאשוב,Fedor Kudryashov,רוסיה,0,0
 ויאצ'יסלב קרבאייב,Vyacheslav Karavaev,רוסיה,0,0
 איגור דיבייב,Igor Diveev,רוסיה,0,0
 אלכסיי מירנצ'וק,Aleksey Miranchuk,רוסיה,0,1
@@ -553,7 +553,7 @@
 דניס צ'רישב,Denis Cheryshev,רוסיה,0,0
 אלכסיי איאונוב,Aleksey Ionov,רוסיה,0,0
 אנדריי מוסטובוי,Andrey Mostovoy,רוסיה,0,0
-דאלר קוזיאייב,Daler Kuzyaev,רוסיה,0,1
+דאלר קוזיאייב,Daler Kuzyaev,רוסיה,0,0
 דניס מקארוב,,רוסיה,0,0
 מגומד אוזדויב,Magomed Ozdoev,רוסיה,0,1
 רומן זובנין,Roman Zobnin,רוסיה,0,1
@@ -572,20 +572,20 @@
 אמיל קראפט,Emil Krafth,שבדיה,0,0
 אנדראס גראנקוויסט,,שבדיה,0,0
 מיקאל לוסטיג,,שבדיה,0,1
-מרטין אולסון,Martin Olsson,שבדיה,0,1
-פונטוס ינסון,Pontus Jansson,שבדיה,0,1
+מרטין אולסון,Martin Olsson,שבדיה,0,0
+פונטוס ינסון,Pontus Jansson,שבדיה,0,0
 פיליפ הלנדר,Filip Helander,שבדיה,0,0
 מרכוס דניאלסון,Marcus Danielson,שבדיה,0,0
 אמיל פורסברג,Emil Forsberg,שבדיה,0,1
-דז'אן קולוסבסקי,Dejan Kulusevski,שבדיה,0,1
+דז'אן קולוסבסקי,Dejan Kulusevski,שבדיה,0,0
 ויקטור קלאסון,Viktor Claesson,שבדיה,0,0
 קן סמה,Ken Sema,שבדיה,0,0
 מתיאס סוואנברג,Mattias Svanberg,שבדיה,0,0
-סבסטיאן לארסון,Sebastian Larsson,שבדיה,1,1
+סבסטיאן לארסון,Sebastian Larsson,שבדיה,1,0
 אלבין אקדל,Albin Ekdal,שבדיה,0,0
 גוסטב סוונסון,Gustav Svensson,שבדיה,0,0
 ינס קאיוסטה,Jens Cajuste,שבדיה,0,0
-כריסטופר אולסון,Kristoffer Olsson,שבדיה,0,1
+כריסטופר אולסון,Kristoffer Olsson,שבדיה,0,0
 אלכסנדר איסאק,Alexander Isak,שבדיה,0,1
 מרכוס ברג,Marcus Berg,שבדיה,0,1
 ז'ורדן לארסון,,שבדיה,0,0
@@ -611,7 +611,7 @@
 רובן ורגאס,Ruben Vargas,שווייץ,0,0
 רמו פרוילר,Remo Freuler,שווייץ,0,1
 דניס זקאריה,Denis Zakaria,שווייץ,0,0
-סטיבן צובר,Steven Zuber,שווייץ,0,1
+סטיבן צובר,Steven Zuber,שווייץ,0,0
 ג'יבריל סו,Djibril Sow,שווייץ,0,0
 האריס ספרוביץ',Haris Seferovic,שווייץ,0,1
 בריל אמבולו,Breel Embolo,שווייץ,0,1

@@ -4,9 +4,7 @@ Data driven, fantasy football, lineups generator
 
 # Installation
 
-## Download and install python3, anaconda and git
-[python3](https://www.python.org/downloads/)
-
+## Download and install anaconda and git
 [anaconda](https://docs.anaconda.com/anaconda/install/)
 
 [git](https://git-scm.com/downloads)

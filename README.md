@@ -22,5 +22,11 @@ Data driven, fantasy football, lineups generator
 
 # Execute
 
-## Run jupyter and execute notebook
-`jupyter notebook fantasy-euro.ipynb`
+## Run jupyter and execute notebook to create players prediction database
+`jupyter notebook generate_players_database.ipynb`
+
+## Execute notebook to generate groups stage lineups
+`jupyter notebook generate_group_stage_lineups.ipynb`
+
+## OR execute notebook to generate single match lineup
+`jupyter notebook generate_single_match_lineup.ipynb`

@@ -1,4 +1,4 @@
-﻿,Unnamed: 0,name_h,name_e,team,is_penalty_taker,is_starter
+,Unnamed: 0,name_h,name_e,team,is_penalty_taker,is_starter
 0,0,אלכסנדר שלאגר,Alexander Schlager,אוסטריה,0,0
 1,1,דניאל באכמן,Daniel Bachmann,אוסטריה,0,0
 2,2,פאבאו פרבאן,Pavao Pervan,אוסטריה,0,0
@@ -56,15 +56,15 @@
 54,54,אלסנדרו באסטוני,Alessandro Bastoni,איטליה,0,0
 55,55,אלסנדרו פלורנצי,Alessandro Florenzi,איטליה,0,0
 56,56,לאונרדו בונוצ'י,Leonardo Bonucci,איטליה,0,1
-57,57,אמרסון,Emerson,איטליה,0,0
+57,57,אמרסון,Emerson,איטליה,0,1
 58,58,ג'יורג'יו קייליני,Giorgio Chiellini,איטליה,0,1
-59,59,לאונרדו ספינצולה,Leonardo Spinazzola,איטליה,0,1
+59,59,לאונרדו ספינצולה,Leonardo Spinazzola,איטליה,0,0
 60,60,ג'ובאני די לורנצו,Giovanni Di Lorenzo,איטליה,0,1
 61,61,פרנצ'סקו אצ'רבי,Francesco Acerbi,איטליה,0,0
 62,62,רפאל טולוי,Rafael Tolói,איטליה,0,0
 63,63,לורנצו אינסינייה,Lorenzo Insigne,איטליה,0,1
 64,64,דומניקו ברארדי,Domenico Berardi,איטליה,0,0
-65,65,פדריקו קייזה,Federico Chiesa,איטליה,0,0
+65,65,פדריקו קייזה,Federico Chiesa,איטליה,0,1
 66,66,לורנצו פלגריני,Lorenzo Pellegrini,איטליה,0,0
 67,67,פדריקו ברנרדרסקי,Federico Bernardeschi,איטליה,0,0
 68,68,ז'ורז'יניו,Jorginho,איטליה,1,1
@@ -85,20 +85,20 @@
 83,83,קייל ווקר,Kyle Walker,אנגליה,0,1
 84,84,טיירון מינגס,Tyrone Mings,אנגליה,0,0
 85,85,לוק שואו,Luke Shaw,אנגליה,0,1
-86,86,קירן טריפייר,Kieran Trippier,אנגליה,0,1
+86,86,קירן טריפייר,Kieran Trippier,אנגליה,0,0
 87,87,קונור קודי,Conor Coady,אנגליה,0,0
 88,88,ריס ג'יימס,Reece James,אנגליה,0,0
-89,89,ג'יידון סאנצ'ו,Jadon Sancho,אנגליה,0,0
+89,89,ג'יידון סאנצ'ו,Jadon Sancho,אנגליה,0,1
 90,90,מרכוס רשפורד,Marcus Rashford,אנגליה,0,0
 91,91,ראחים סטרלינג,Raheem Sterling,אנגליה,0,1
 92,92,פיל פודן,Phil Foden,אנגליה,0,0
-93,93,מייסון מאונט,Mason Mount,אנגליה,0,0
+93,93,מייסון מאונט,Mason Mount,אנגליה,0,1
 94,94,ג'ק גריליש,Jack Grealish,אנגליה,0,0
-95,95,בוקאיו סאקה,Bukayo Saka,אנגליה,0,1
+95,95,בוקאיו סאקה,Bukayo Saka,אנגליה,0,0
 96,96,ג'וד בלינגהאם,Jude Bellingham,אנגליה,0,0
 97,97,ג'ורדן הנדרסון,Jordan Henderson,אנגליה,0,0
 98,98,דקלאן רייס,Declan Rice,אנגליה,0,1
-99,99,קלווין פיליפס,Kalvin Phillips,אנגליה,0,1
+99,99,קלווין פיליפס,Kalvin Phillips,אנגליה,0,0
 100,100,הארי קיין,Harry Kane,אנגליה,1,1
 101,101,דומיניק קלברט-לווין,Dominic Calvert-Lewin,אנגליה,0,0
 102,102,טיבו קורטואה,Thibaut Courtois,בלגיה,0,1
@@ -171,7 +171,7 @@
 169,169,פייר-אמיל הויביירג,Pierre-Emile Højbjerg,דנמרק,0,1
 170,170,תומאס דילייני,Thomas Delaney,דנמרק,0,1
 171,171,מיקל דמסגארד,Mikkel Damsgaard,דנמרק,0,1
-172,172,מתיאס ינסן,Mathias Jensen,דנמרק,0,0
+172,172,מתיאס ינסן,Mathias Jensen,דנמרק,0,1
 173,173,אנדרס כריסטיאנסן,Andreas Christensen,דנמרק,0,0
 174,174,כריסטיאן נורגורד,Christian Nørgaard,דנמרק,0,0
 175,175,מרטין בריית'ווייט,Martin Braithwaite,דנמרק,0,1
@@ -311,18 +311,18 @@
 309,309,דויד דה חאה,David de Gea,ספרד,0,0
 310,310,רוברט סאנצ'ס,,ספרד,0,0
 311,311,ג'ורדי אלבה,Jordi Alba,ספרד,0,1
-312,312,מרקוס יורנטה,Marcos Llorente,ספרד,0,0
+312,312,מרקוס יורנטה,Marcos Llorente,ספרד,0,1
 313,313,אמריק לאפורט,Aymeric Laporte,ספרד,0,1
 314,314,פאו טורס,Pau Torres,ספרד,0,0
-315,315,אריק גרסיה,Eric García,ספרד,0,1
-316,316,ססאר אספיליקווטה,César Azpilicueta,ספרד,0,1
+315,315,אריק גרסיה,Eric García,ספרד,0,0
+316,316,ססאר אספיליקווטה,César Azpilicueta,ספרד,0,0
 317,317,חוסה גאיה,José Gayà,ספרד,0,0
 318,318,דייגו יורנטה,Diego Llorente,ספרד,0,0
 319,319,פראן טורס,Ferran Torres,ספרד,0,1
 320,320,דני אולמו,Dani Olmo,ספרד,0,0
 321,321,מיקל אוירסבאל,Mikel Oyarzabal,ספרד,0,0
 322,322,טיאגו אלקנטרה,Thiago,ספרד,0,0
-323,323,פבלו סראביה,Pablo Sarabia,ספרד,0,1
+323,323,פבלו סראביה,Pablo Sarabia,ספרד,0,0
 324,324,פדרי,Pedri,ספרד,0,1
 325,325,קוקה,Koke,ספרד,0,1
 326,326,רודרי,Rodri,ספרד,0,0
